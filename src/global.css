@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: white !important;
+}
+
+#root {
+  width: 100%;
+  overflow: hidden;
+  background:#0b0f3a;
+}
+.ant-message-success span {
+  color: #52c41a !important;
+}
+
+.ant-table {
+  color: white !important;
+}
+
+.ant-table-thead > tr > th {
+  color: white !important;
+}
+
+.ant-message-error span {
+  color: #ff5400 !important;
+}
+
+.ant-select-arrow{
+  color: #ffffff !important;
+}
+
+.ant-select {
+  color: #ffffff !important;
+}
+.ant-empty-image{
+  display: none !important;
+}
+.ant-table-placeholder{
+  background: none !important;
+  color: #fff !important;
+  border: none !important;
+}
+.ant-tabs-tab{
+  color: #fff !important;
+}
+.ant-tabs-bar{
+  margin-bottom: 0 !important;
+}
+.listnone{
+  display: none !important;
+}
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td{
+  background: none !important;
+}

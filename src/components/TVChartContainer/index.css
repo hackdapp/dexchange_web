@@ -1,0 +1,22 @@
+.TVChartContainer {
+  height: calc(100vh - 400px);
+  background: rgba(38, 38, 38, 0.3) !important;
+}
+.chart-page,:global(.chart-page){
+  /* background: rgba(38, 38, 38, 0.3) !important; */
+  /* background: red !important; */
+}
+
+.charTime{
+  margin: 10px 0;
+}
+.charTime>span{
+  font-size: 12px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 776px){
+  .TVChartContainer{
+    display: none;
+  }
+}

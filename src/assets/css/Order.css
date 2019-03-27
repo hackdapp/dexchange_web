@@ -1,0 +1,111 @@
+:global(.order){
+  padding-bottom: 20px;
+}
+:global(.order>p){
+  padding-left: 20px;
+  font-size: 20px;
+  height: 56px;
+  line-height: 56px;
+  margin-bottom: 0;
+}
+:global(.order .ant-table-wrapper th), :global(.order .ant-table-wrapper td){
+  text-align: center !important;
+  color: #fff !important;
+  border: none !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  padding: 0px !important;
+}
+:global(.order .ant-table-wrapper td){
+  width: 33.333333%;
+}
+:global(.order .ant-table-wrapper th){
+  background: transparent !important;
+  padding: 10px 0 !important;
+}
+:global(.order .ant-table-wrapper:nth-of-type(1) .ant-table-thead th){
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0 !important;
+}
+:global(.order .ant-table-wrapper tr){
+  position: relative;
+}
+:global(.order .ant-table-wrapper tr>td){
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+:global(.order .ant-table-wrapper tr>th:nth-of-type(4)){
+  float: right;
+  display: none;
+}
+:global(.order .ant-table-wrapper tr>td:nth-of-type(4)){
+  display: block;
+  width: 100%;
+  height: 20px !important;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+:global(.order .ant-table-wrapper tr>td:nth-of-type(4) span){
+  display: block;
+  height: 20px;
+  float: right;
+  /* margin-right: 3px; */
+}
+:global(.order .ant-table-wrapper:nth-of-type(1) tr>td:nth-of-type(4) span){
+  background-color: rgba(218,48,98,.1);
+}
+:global(.order>div:nth-of-type(3) tr>td:nth-of-type(4) span){
+  background-color: rgba(73,204,128,.1);
+}
+:global(.order .ant-table-wrapper:nth-of-type(1) tr td:nth-of-type(1)){
+  color: #da3062 !important;
+}
+:global(.order>div:nth-of-type(3) tr td:nth-of-type(1)){
+  color: #74ee9c !important;
+}
+:global(.order .ant-table-wrapper td){
+  font-size: 12px;
+}
+:global(.order .ant-pagination){
+  display: none !important;
+}
+/* :global(.order .ant-table-tbody tr:hover),:global(.order .ant-table-tbody tr:hover td),:global(.order .ant-table-tbody tr:hover span){
+  background: transparent !important;
+  opacity: 0.8;
+} */
+:global(.ant-table-placeholder) {
+  color: #fff !important;
+  background:transparent !important;
+  border: none !important;
+}
+
+@media screen and (max-width: 776px) {
+  :global(.order .ant-table-wrapper tr>td:nth-of-type(4) span){
+    /* margin-right: 1px; */
+  }
+  :global(.order tr>th:nth-of-type(3)),
+  :global(.order tr>td:nth-of-type(3)),
+  :global(.order>p){
+    display: none;
+  }
+  :global(.order .ant-table-wrapper tr){
+    width: 100%;
+  }
+  :global(.order .ant-table-wrapper th), :global(.order .ant-table-wrapper td){
+    width: 50%;
+  }
+  :global(.order .ant-table-wrapper th){
+    font-size: 12px !important;
+  }
+  :global(.order .ant-table-wrapper:nth-of-type(1) th:nth-of-type(1)){
+    border-radius: 8px 0 0 0 !important;
+  }
+  :global(.order .ant-table-wrapper:nth-of-type(1) th:nth-of-type(2)){
+    border-radius: 0 8px 0 0 !important;
+  }
+  :global(.ant-table-thead > tr){
+    overflow: hidden !important;
+  }
+}

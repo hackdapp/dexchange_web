@@ -1,0 +1,108 @@
+/* :global(){} */
+:global(.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td), :global(.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td), :global(.ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td),
+:global(.ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td){
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+:global(#recordTable tr td){
+  border:none;
+  font-size: 14px;
+  padding: 2px 0;
+}
+:global(#recordTable tr>td:nth-of-type(1)){
+  padding-left: 20px;
+  text-align: left;
+  padding-left: 40px;
+}
+:global(#recordTable){
+  height: 275px;
+  height: 270px;
+  overflow-y: scroll;
+}
+:global(#recordTable::-webkit-scrollbar) {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+  position: relative;
+}
+:global(#recordTable::-webkit-scrollbar-thumb) {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+:global(#recordTable tr>td:nth-of-type(2)){
+  text-align: center;
+  font-size:16px;
+  padding: 4px 0;
+  color:rgba(255,84,0,1);
+}
+:global(#recordTable tr>td:nth-of-type(3)),:global(#recordTable .ant-table-thead tr th:nth-of-type(3)){
+  text-align: center;
+  display: none;
+}
+:global(#recordTable tr>td:nth-of-type(4)){
+  text-align: right;
+  padding-right: 20px;
+}
+:global(.ant-pagination){
+  display: none !important;
+}
+:global(#recordTable .ant-table-thead tr th){
+  padding: 9px 16px;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: rgba(255,255,255,.1) !important;
+}
+:global(#recordTable .ant-table-thead tr th:nth-of-type(1)){
+  padding-left: 40px;
+}
+:global(#recordTable .ant-table-thead tr th:nth-of-type(2)){
+  text-align: center;
+}
+:global(#recordTable .ant-table-thead tr th:nth-of-type(4)){
+  text-align: right;
+  padding-right: 20px;
+}
+@media screen and (max-width: 776px) {
+  :global(#recordTable tr td){
+    font-size: 12px;
+  }
+  :global(#recordTable tr>td:nth-of-type(2)){
+    font-size: 12px;
+  }
+  :global(#recordTable tr>td){
+    /* width: 33% !important; */
+  }
+  :global(#recordTable tr>td:nth-of-type(1)){
+    padding-left: 14px;
+  }
+  :global(#recordTable tr>td:nth-of-type(3)){
+    width: 100% !important;
+  }
+  :global(#recordTable .ant-table-thead tr th:nth-of-type(1)){
+    padding: 0 !important;
+  }
+  :global(#recordTable tr>td:nth-of-type(3)),:global(#recordTable .ant-table-thead tr th:nth-of-type(3)){
+    display: block;
+  }
+  :global(#recordTable tr>td:nth-of-type(3) em),:global(#recordTable .ant-table-thead tr th:nth-of-type(3) em){
+    margin: 0 3px;
+  }
+  :global(#recordTable tr>td){
+    margin: 0 !important;
+    padding: 5px !important;
+  }
+  /* :global(#recordTable .ant-table-thead){
+    display: inline-block !important;
+  }
+  :global(#recordTable .ant-table-thead > tr){
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  :global(#recordTable .ant-table-thead > tr > th){
+    display: inline-block;
+  } */
+}

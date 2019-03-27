@@ -1,0 +1,174 @@
+.vipWidth{
+  width: 100%;
+  background-color: #d4b068 !important;
+}
+.vipContainer{
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.vip{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+.vip>div{
+  width: 40%;
+}
+.vip>div>p{
+  display: block;
+  margin: 30px auto;
+  width: 80%;
+  height: 70px;
+  line-height: 70px;
+  font-size: 22px;
+	color: #000000;
+  text-align: center;
+  background: url(../../images/vip/bg.png) no-repeat center;
+  background-size: cover;
+	font-family: PingFangSC-Regular;
+}
+.vip>div>div{
+  margin: 0 auto;
+  /* width: 90%; */
+  min-width: 340px;
+}
+.myprogress{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.myimg img{
+  width: 70px;
+}
+.myimg{
+  width: 20%;
+}
+.mynums{
+  width: 76%;
+}
+.protips{
+  width: 90%;
+  margin: 30px auto;
+  font-size: 14px;
+}
+:global(.ant-progress-text){
+  color: #fff;
+}
+:global(.mypro){
+  width: 100%;
+}
+:global(.mypro .ant-progress-inner){
+  background: rgba(0, 0, 0, 0.15);
+  height: 28px;
+  overflow: hidden;
+}
+:global(.mypro .ant-progress-success-bg),:global(.mypro .ant-progress-bg){
+  background: #ff5400;
+  height: 28px !important;
+  border-radius: 30px !important;
+}
+.grade>div{
+  border-radius: 30px;
+  padding: 5%;
+  font-size: 15px;
+  color: #444444 !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+.mrprogress>div,.grade>div span{
+  display: inline-block;
+  vertical-align: top;
+}
+.gradetitle span{
+  width: 50%;
+}
+.progressNum{
+  /* width: 100px; */
+}
+
+.progressLength{
+  display: inline-block;
+  margin: 0 10px;
+  width: 5%;
+  height: 3px;
+  border-radius: 3px;
+  margin-top: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#fac149), to(#ffdd7f));
+  background: linear-gradient(to right, #fac149, #ffdd7f);
+}
+.gradecontent{
+  width: 420px;
+  margin: 0 auto;
+}
+.gradecontent li{
+  white-space: nowrap;
+  margin-bottom: 20px;
+  height: 34px;
+  line-height: 34px;
+}
+.gradecontent img{
+  vertical-align: top !important;
+}
+.gradecontent li:nth-of-type(2) .progressLength{width: 10%;}
+.gradecontent li:nth-of-type(3) .progressLength{width: 16%;}
+.gradecontent li:nth-of-type(4) .progressLength{width: 22%;}
+.gradecontent li:nth-of-type(5) .progressLength{width: 28%;}
+.gradecontent li:nth-of-type(6) .progressLength{width: 34%;}
+.gradecontent li:nth-of-type(7) .progressLength{width: 40%;}
+.gradecontent li:nth-of-type(8) .progressLength{width: 46%;}
+.gradecontent li:nth-of-type(9) .progressLength{width: 52%;}
+.gradecontent li:nth-of-type(10) .progressLength{width: 58%;}
+.progressBonus img{
+  height:34px;
+}
+.progressBonus em{
+  margin-left: 5px;
+}
+@media screen and (max-width: 776px){
+  .vip{
+    display: block;
+    padding-top: 10px;
+  }
+  .vip>div{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .myprogress,.vip>div>p{
+    /* width: 90%; */
+  }
+  .myimg img{
+    width: 50px;
+  }
+  .mynums>p{
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+  :global(.mypro .ant-progress-inner),:global(.mypro .ant-progress-success-bg),:global(.mypro .ant-progress-bg){
+    height: 20px !important;
+  }
+  .vip>div>div{
+    min-width: auto;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  .gradecontent li{
+    margin-bottom: 10px;
+  }
+  .gradecontent{
+    width: 320px;
+  }
+  .gradecontent li:nth-of-type(2) .progressLength{width: 10%;}
+  .gradecontent li:nth-of-type(3) .progressLength{width: 14%;}
+  .gradecontent li:nth-of-type(4) .progressLength{width: 18%;}
+  .gradecontent li:nth-of-type(5) .progressLength{width: 22%;}
+  .gradecontent li:nth-of-type(6) .progressLength{width: 26%;}
+  .gradecontent li:nth-of-type(7) .progressLength{width: 30%;}
+  .gradecontent li:nth-of-type(8) .progressLength{width: 34%;}
+  .gradecontent li:nth-of-type(9) .progressLength{width: 36%;}
+  .gradecontent li:nth-of-type(10) .progressLength{width: 40%;}
+  .vipContainer{
+    padding-top: 90px;
+  }
+}

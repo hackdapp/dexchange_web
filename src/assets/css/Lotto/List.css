@@ -1,0 +1,146 @@
+.listTitle{
+  padding: 19px 30px 19px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px 4px 0 0;
+}
+/* 期号 */
+.qihao{
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  padding-left: 5px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-image: url("../../images/pc/lotto_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgb(134, 211, 100); */
+}
+:global(#List){
+  height: 290px;
+  height: 254px;
+  overflow-y: scroll;
+}
+:global(#List::-webkit-scrollbar) {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+  position: relative;
+}
+:global(#List::-webkit-scrollbar-thumb) {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+:global(#List .ant-table-thead th){
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  display: none;/* 表头隐藏 */
+}
+:global(#List tr td){
+  border:none;
+  font-size: 14px;
+  /* padding: 10px; */
+  padding: 0 10px;
+  white-space: nowrap;
+}
+:global(#List tr td a){
+  color: #fff;
+  font-family: Consolas,Monaco,monospace;
+}
+:global(#List tr:hover td),:global(#List tr:hover td a){
+  /* color: rgba(255,84,0,1); */
+  color: rgb(134, 211, 100);
+}
+:global(#List tr td>span){
+  color: #fff !important;
+}
+:global(#List tr){
+  padding: 0 20px;
+}
+:global(#List .ant-table-thead > tr > th),:global(.ant-table-tbody > tr > td){
+  padding: 19px 16px;
+}
+:global(#List tr>th:nth-of-type(1)),:global(#List tr>td:nth-of-type(1)){
+  padding-left: 20px;
+}
+:global(#List tr>th:nth-of-type(2)),:global(#List tr>td:nth-of-type(2)){
+  text-align: right;
+  /* text-align: center; */
+  padding: 5px 0;
+}
+:global(#List tr>th:nth-of-type(2)),:global(#List tr>td:nth-of-type(2)){
+  width: 350px;
+}
+:global(#List tr>th:nth-of-type(3)),:global(#List tr>td:nth-of-type(3)){
+  text-align: left;
+  width: 70px;
+  padding: 0;
+}
+  :global(#List tr>th:nth-of-type(4)),:global(#List tr>td:nth-of-type(4)){
+  text-align: right;
+  padding-right: 20px;
+}
+:global(#List){
+  display: inline-block;
+  width: 700px;
+  /* margin-top: -41px; */
+}
+:global(#List .ant-table-tbody){
+  overflow-y: scroll;
+}
+:global(#List .ant-table-tbody::-webkit-scrollbar) {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+  position: relative;
+}
+:global(#List .ant-table-tbody::-webkit-scrollbar-thumb) {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+.lists{
+  height: 295px;
+  height: 266px;
+  overflow: hidden;
+}
+@media screen and (max-width: 776px) {
+  :global(#List){
+    /* margin-top: 72px; */
+    width: 100%;
+    height: 254px;
+    /* margin:72px 10px 0; */
+  }
+  :global(#List tr){
+    padding: 0 5px;
+  }
+  :global(#List tr>th), :global(#List tr>td){
+    font-size: 12px;
+    padding: 0;
+  }
+  :global(#List tr>th:nth-of-type(2)), :global(#List tr>td:nth-of-type(2)){
+    width: auto;
+  }
+  .qihao{
+    width: 40px;
+    height: 14px;
+    line-height: 14px;
+  }
+  .lists{
+    height: 266px;
+  }
+  :global(#List tr>th:nth-of-type(1)),:global(#List tr>td:nth-of-type(1)){
+    padding-left: 10px;
+  }
+  :global(#List tr>th:nth-of-type(3)),:global(#List tr>td:nth-of-type(3)){
+    width: 40px;
+  }
+  :global(#List tr>th:nth-of-type(4)),:global(#List tr>td:nth-of-type(4)){
+    padding-right: 10px;
+  }
+}

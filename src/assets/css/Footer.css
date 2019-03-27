@@ -1,0 +1,127 @@
+@import '~antd/dist/antd.css';
+:global(.ant-layout),:global(.ant-layout-footer){
+  background: transparent;
+}
+:global(.ant-layout-footer){
+  text-align: left;
+  color: #fff;
+  margin: 0;
+  padding: 25px 0;
+  border-top: 1px solid #3c3c3c;
+}
+:global(.ant-layout-footer>div:nth-of-type(1)){
+  white-space: nowrap;
+}
+:global(.ant-layout-footer a){
+  color: #fff !important;
+}
+:global(.ant-layout-footer>div),.bx{
+  width: auto;
+  max-width: 1220px;
+  margin: 0 auto;
+  word-break: break-all;
+}
+:global(.ant-layout-footer>div img){
+  vertical-align: top;
+  margin-top: 10px;
+}
+:global(.ant-layout-footer span){
+  font-family: PingFangSC-Regular;
+	font-size: 16px;
+  color: #ffffff;
+  line-height: 64px;
+  position: relative;
+  top: 0;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+}
+:global(.ant-layout-footer span:nth-of-type(1)){
+  margin-left: 40px;
+}
+:global(.ant-layout-footer span:nth-of-type(1)::after){
+  content:'';
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  position: absolute;
+  top: 26px;
+  right: -20px;
+}
+.boxtips>div,:global(#bx>div){
+  font-size: 12px;
+  display: block !important;
+  word-break: break-all !important;
+  word-wrap: break-word !important;
+  color: #72778d;
+  margin-bottom: 10px;
+}
+.callus>i{
+  display: inline-block;
+  color: #7c809b;
+  border: 2px solid #7c809b;
+  background: #313951;
+  max-width: 92px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 21px;
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+}
+.callus>i:nth-of-type(1){
+  margin-right: 10px;
+}
+@media screen and (max-width: 776px) {
+  :global(.ant-layout-footer>div img){
+    width:100px;
+    margin-top: 20px;
+  }
+  :global(.ant-layout-footer){
+    padding: 10px 0;
+  }
+  .bx{
+    padding: 0 20px;
+  }
+  :global(.ant-layout-footer span:nth-of-type(1)){
+    margin-left: 20px;
+  }
+  .business{
+    display: inline-block;
+    font-size: 12px;
+    width: 100px;
+    line-height: 20px;
+    word-break: break-all;
+    white-space: initial;
+    vertical-align: middle;
+  }
+  /* .callus>i{
+    display: inline-block;
+    color: #7c809b;
+    border: 2px solid #7c809b;
+    background: #313951;
+    max-width: 92px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    vertical-align: top;
+  }
+  :global(.ant-layout-footer span){
+    margin:  0 5px;
+  }
+  .callus>i:nth-of-type(1) {
+    margin-right: 5px;
+  }
+  :global(.ant-layout-footer span:nth-of-type(1)){
+    margin-left: 10px;
+  } */
+}

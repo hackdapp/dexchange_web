@@ -1,0 +1,122 @@
+.trade>p{
+  padding-left: 20px;
+  font-size: 20px;
+  height: 56px;
+  line-height: 56px;
+  margin-bottom: 0;
+}
+.titles{
+  height: 40px;
+  line-height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  padding-right: 2%;
+}
+.titles>span{
+  width: 30%;
+  text-align: center;
+}
+.titles,:global(.ant-collapse-header>p){
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+:global(.ant-collapse){
+  height: auto;
+  max-height: 600px;
+  padding-bottom: 16px;
+  overflow-y: scroll;
+}
+:global(.ant-collapse::-webkit-scrollbar) {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+:global(.ant-collapse::-webkit-scrollbar-thumb) {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+:global(.ant-collapse > .ant-collapse-item > .ant-collapse-header){
+  height: 32px !important;
+  line-height: 32px !important;
+  border:none !important;
+  padding: 0 !important;
+}
+:global(.ant-collapse-header>p>span){
+  width: 33%;
+  text-align: center;
+  color: #fff !important;
+  position: relative;
+}
+:global(.ant-collapse-content > .ant-collapse-content-box){
+  padding: 0;
+}
+:global(.ant-collapse-header>p>span:nth-of-type(4)){
+  color: rgb(24, 144, 255) !important;
+}
+:global(.ant-collapse),:global(.ant-collapse-content),:global(.ant-collapse>div){
+  background:transparent !important;
+  border:none !important;
+  color: #fff !important;
+}
+:global(.ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow){
+  color: transparent;
+  border: none;
+}
+.tradeinfo{
+  padding-left: 50px;
+  position: relative;
+}
+.tradeinfo a{
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.tradeinfo>p:nth-of-type(4){
+  margin-bottom: 2px;
+}
+:global(.ant-collapse-item){
+  position: relative;
+}
+:global(.add-del .anticon-plus),:global(.add-del .anticon-minus){
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  color: #fff;
+  font-size: 12px;
+  border: solid 2px #ffffff;
+  /* position: absolute; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0 10px 0 20px;
+}
+:global(.add-del .anticon-minus){
+  display: none;
+}
+:global(.ant-collapse-item-active .anticon-plus){
+  display: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+:global(.ant-collapse-item-active .anticon-minus){
+  display: inline-block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+@media screen and (max-width: 776px){
+  .trade>p{
+    display: none;
+  }
+  :global(.ant-tabs-content){
+    /* margin-top: -16px; */
+  }
+  :global(.ant-collapse){
+    max-height: 400px;
+  }
+  :global(.add-del .anticon-plus),:global(.add-del .anticon-minus){
+    margin: 0 5px 0 10px;
+  }
+}

@@ -1,0 +1,106 @@
+:global(.bets){
+  background-color: #0b0f3a;
+}
+:global(.bets .ant-alert-info p){
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+:global(.bets .ant-tabs-nav .ant-tabs-tab-active),:global(.bets .ant-tabs),:global(.bets .ant-tabs-nav .ant-tabs-tab:hover){
+  color:#fff;
+  outline: none;
+}
+:global(.bets .ant-tabs-nav-container){
+  border-bottom: 1px solid #3c3c3c;
+}
+:global(.bets .ant-tabs-tabpane){
+  min-height: 550px;
+}
+:global(.bets .ant-tabs-tab){
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+}
+:global(.bets .ant-tabs-ink-bar){
+  background: #ff5400;
+  width: 70px !important;
+  height: 4px;
+  left: 16px;
+  top: 59px;
+}
+:global(.bets .ant-tabs-nav-scroll){
+  text-align: center;
+}
+:global(.bets .ant-tabs-nav-container){
+  line-height: 52px;
+}
+:global(.bets .ant-table-wrapper){
+  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 50px;
+}
+:global(.bets .ant-pagination){
+  display: none;
+}
+:global(.bets th),:global(.bets td){
+  color: #fff !important;
+  font-size: 14px;
+  background: transparent !important;
+  border:none !important;
+  text-align: center !important;
+}
+:global(.bets tr){
+  outline: none;
+}
+:global(.bets .ant-table-row:nth-of-type(odd)){
+  /* background: rgba(60, 60, 60, .3); */
+}
+/* :global(.bets .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+:global(.bets .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row) > td),
+:global(.bets .ant-table-thead > tr:hover:not(.ant-table-expanded-row) > td),
+:global(.bets .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td){
+  background: transparent;
+} */
+:global(.ant-message-error span){
+  color: #ff5400 !important;
+}
+
+:global(.win>td:nth-of-type(6)){
+  color: #2bf094 !important;
+  text-shadow: 0px 0px 6px #fff;
+}
+:global(.failure>td:nth-of-type(6)){
+  color: #da3062 !important;
+}
+:global(.win){
+  background-color: #334e47 !important;
+  border-top: 1px solid #17ae5f !important;
+}
+:global(.failure){
+  background-color: #4c2d2e !important;
+  border-top: 1px solid #c02020 !important;
+}
+:global(.ant-table-placeholder){
+  /* background: rgba(60, 60, 60, .3) !important; */
+  border: none !important;
+}
+:global(.ant-alert-description){
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+@media screen and (max-width: 776px) {
+  :global(.bets th:nth-of-type(3)),
+  :global(.bets th:nth-of-type(4)),
+  :global(.bets th:nth-of-type(5)),
+  :global(.bets td:nth-of-type(3)),
+  :global(.bets td:nth-of-type(4)),
+  :global(.bets td:nth-of-type(5))
+  {
+    display: none;
+  }
+  :global(.bets .ant-table-wrapper){
+    width: 100%;
+    /* padding: 0 20px; */
+  }
+  :global(.bets .ant-table-wrapper td){
+    padding: 10px 0;
+  }
+}

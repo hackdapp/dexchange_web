@@ -1,0 +1,134 @@
+:global(#RightTab){
+  position: fixed;
+  right: 0;
+  top: 220px;
+  width: 80px;
+  z-index: 100;
+  transition: all 0.9s;
+}
+:global(#RightTab a),:global(#RightTab label){
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: none !important;
+  /* background-color: #ff5400 !important; */
+  padding: 0;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+:global(#RightTab label){
+  background: rgba(0,0,0,.4);
+}
+:global(#RightTab label a img){
+  position: absolute;
+  width: 32px;
+  top: 10px;
+  left: 18px;
+}
+:global(#RightTab label:nth-of-type(6) a img){
+  width: 40px;
+  top: 20px;
+  left: 15px;
+}
+:global(#RightTab label:hover){
+  /* background-color: #393b53; */
+}
+:global(.ant-radio-button-checked),:global(.ant-radio-button-wrapper-checked a){
+  /* background-color: #ff5400 !important; */
+}
+:global(.rightShowOrHide){
+  font-size: 20px !important;
+  position: fixed;
+  right: 90px;
+  top: 213px;
+  transition: all 0.9s;
+}
+@media screen and (max-width: 776px) {
+  :global(.rightShowOrHide){
+    display: none;
+  }
+  :global(#RightTab){
+    height: 40px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    /* white-space: nowrap; */
+  }
+  :global(#RightTab .ant-radio-group){
+    width: 94%;
+    /* padding-right: 20px;
+    overflow-x: scroll; */
+  }
+  :global(#RightTab label){
+    margin-left: 20px;
+  }
+  :global(#RightTab a), :global(#RightTab label){
+    display: inline-block;
+    /* width: 120px;
+    height: 80px; */
+    width: 60px;
+    height: 40px;
+    line-height: 124px;
+  }
+  :global(#RightTab label a img){
+    /* top: 7px;
+    left: 14px;
+    width: 50px;
+    width: 36px; */
+  }
+  :global(#RightTab a){
+    top: -18px;
+    left: 0px;
+  }
+  :global(#RightTab a span){
+    line-height: 14px;
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+    font-size: 12px;
+  }
+  :global(#RightTab label a span){
+    display: block;
+    width: 60px;
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+  }
+  :global(#RightTab label:nth-of-type(1) a img){
+    width: 24px;
+    top: 4px;
+    left: 16px;
+  }
+  :global(#RightTab label:nth-of-type(2) a img){
+    width: 20px;
+    top: 4px;
+    left: 20px;
+  }
+  :global(#RightTab label:nth-of-type(3) a img){
+    width: 25px;
+    top: 4px;
+    left: 14px;
+  }
+  :global(#RightTab label:nth-of-type(4) a img){
+    width: 25px;
+    top: 4px;
+    left: 14px;
+  }
+  :global(#RightTab label:nth-of-type(5) a img){
+    width: 28px;
+    top: 2px;
+    left: 16px;
+  }
+  :global(#RightTab label:nth-of-type(6) a img){
+    width: 40px;
+    top: 4px;
+    left: 10px;
+  }
+}

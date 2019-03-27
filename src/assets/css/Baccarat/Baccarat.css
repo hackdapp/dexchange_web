@@ -1,0 +1,1917 @@
+.game_dice_main{
+  width: 100vw;
+  height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: -36px;
+}
+.game_comp_baccarat_bet {
+  background-color: #161a35;
+  min-height: 500px;
+  /* padding-bottom: 50px; */
+  color: #fff;
+  max-width: 3380px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.table_on_pc {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+.game_comp_baccarat-bet .game_view {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #140b04;
+}
+.table_on_pc .left_section .table_list, .table_on_pc .right_section .table-list {
+  height: 250px;
+  /* width: 250px; */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  margin-top: 10px;
+}
+.table_on_pc .left_section .record,
+.table_on_pc .left_section .table_list{
+  padding-left: 10px;
+}
+.table_on_pc .right_section .table-list{
+  left: -570px;
+}
+.table_on_pc .left_section, .game_comp_baccarat-bet .table_on_pc .right_section {
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  top: 80px;
+}
+.game_comp_baccarat-bet .table_on_pc .right_section{
+  overflow: hidden;
+}
+.table_list .small_btn{
+  position: absolute;
+  /* right: 0; */
+  top: 0;
+}
+.table_on_pc .left_section {
+  position: relative;
+}
+.table_on_pc .left_section .record {
+  width: 270px;
+  margin-bottom: 2.56px;
+  margin-bottom: 0.16rem;
+  position: relative;
+  height: 610px;
+}
+.table_on_pc .left_section .record .small_btn,
+.table_list .small_btn{
+  width: 40px;
+  line-height: 40px;
+  padding: 10px 0;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  font-size: 16px;
+  writing-mode: tb;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: rgba(4, 96, 49, .6);
+}
+.table_on_pc .left_section .record .small_btn{
+  right: -40px;
+}
+.table_list .small_btn{
+  /* left: -40px;
+  float: left; */
+}
+.btnactive{
+  background: #d8892d !important;
+}
+.bet_result_table .title > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+.bet_result_table .title > div > div {
+  vertical-align: middle;
+  margin: 0 0.8px;
+  margin: 0 0.05rem;
+}
+.bet_result_table .title > div > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.current_allBet_log {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  border: 1px solid rgba(245, 240, 240, .4);
+  overflow: hidden;
+}
+.current_allBet_log .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(245, 240, 240, .4);
+  background: rgba(0, 0, 0, .4);
+  font-size: 14px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.el_scrollbar {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.el_scrollbar::-webkit-scrollbar {/*滚动条整体样式*/
+  /*高宽分别对应横竖滚动条的尺寸*/
+  width: 10px;
+  height: 100px;
+}
+.el_scrollbar::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+.current_allBet_log .el_scrollbar_wrap {
+  margin-right: -17px !important;
+}
+.game_comp_baccarat_bet .el_scrollbar__wrap {}
+.el_scrollbar__wrap {
+  height: 100%;
+}
+.baccarat_bet {
+  height: 162.4px;
+  height: 10.15rem;
+  width: 307.2px;
+  /* width: auto;
+  max-width: 19.2rem;
+  height: 100vh; */
+  width: 19.2rem;
+  /* height: auto; */
+  background-image: url(../../images/Baccarat/bg.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  padding-bottom: 10.8rem;
+}
+.baccarat_bet .middle_bets:hover > h4,
+.baccarat_bet .aside_bets:hover > h4,
+.baccarat_bet .other_bet_item:hover > h4,
+.baccarat_bet .middle_bets:hover > p,
+.baccarat_bet .aside_bets:hover > p,
+.baccarat_bet .other_bet-item:hover > p {
+  color: #eee;
+  text-shadow: 0 0 2.4px #fff;
+  text-shadow: 0 0 0.15rem #fff;
+}
+.baccart_others .select_bets {
+  margin: 0 auto;
+  width: 8.64px;
+  width: 0.54rem;
+  min-width: 36px;
+  min-height: 36px;
+  height: 8.64px;
+  height: 0.54rem;
+  position: relative;
+}
+.baccart_others .select_bets .img_wrap {
+  position: relative;
+  width: 8.64px;
+  width: 0.54rem;
+  min-width: 100%;
+  height: 8.64px;
+  height: 0.54rem;
+  min-height: 100%;
+}
+.baccart_others .select_bets .img_wrap > img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.current_allBet_log .current_allBet_wrap {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 12px;
+}
+.current_allBet_log .current_allBet_wrap .scroll_wrap {
+  padding: 1.6px;
+  padding: 0.1rem;
+  width: 100%;
+}
+.current_allBet_log .current_allBet_wrap .scroll_wrap > div {
+  width: 100%;
+  padding: 10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  /* margin: 5px 10px; */
+}
+.bet {
+  font-family: 'Microsoft';
+}
+.bet .zhuang {
+  background: #b11c2f;
+}
+.bet .xian {
+  background: #253385;
+}
+.bet .he {
+  background: #166538;
+}
+.small_blue {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 50%;
+  background: #283185;
+  border: 1px solid #ab9859;
+}
+.small_red {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border-radius: 50%;
+  background: #b21d30;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ab9859;
+}
+.bets_other .other {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  background: #cccccc;
+}
+.bet > div {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  font-size: 12px;
+}
+.current_allBet_log .current_allBet_wrap .scroll_wrap > div > div:nth-child(2) {
+  min-width: 35%;
+  margin-left: 12px;
+}
+.current_allBet_log .current_allBet_wrap .scroll_wrap > div > div:nth-child(3) {
+  margin-left: 10px;
+}
+.current_allBet_log .current-allBet_yellow,.current_allBet_log .current_allBet_wrap .scroll_wrap > div > div:nth-child(3) {
+  color: #fadb00;
+  font-weight: 600;
+  text-shadow: 0 0 3px #fadb00;
+}
+
+.table_on_pc .right_section {
+  right: 10px;
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  top: 10px;
+}
+.table_on_pc .right_section div.small_btn {
+  right: 100%;
+  top: 0;
+  /* -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0); */
+}
+.table_on_pc .right_section .statis {
+  left: 0px;
+  top: 80px;
+  height: 272px;
+  width: 280px;
+}
+.table_on_pc .right_section .table_list {
+  float: right;
+  position: relative;
+}
+.table_on_pc .right_section .table_list:before, .table_on_pc .right_section .table_list:after {
+  content: "";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.top_punter {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  border: 1px solid rgba(245, 240, 240, .4);
+  overflow: hidden;
+  min-height: 200px;
+}
+.left_section .t1 {
+  width: 570px;
+  height: 272px;
+  max-width: 710px;
+}
+.pc_small .title {
+  height: 15%;
+  border-bottom: 1px solid rgba(245, 240, 240, .4);
+  padding: 16px 12px;
+  padding: 10px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.table_list .title>div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 1.6px 2.4px;
+  padding: 0.1rem 0.15rem;
+  width: 100%;
+  height: 16.8%;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+}
+.top_punter .title1, .top_punter .title2 {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(245, 240, 240, .4);
+  background: rgba(0, 0, 0, .4);
+}
+.top_punter .current_allBet_wrap {
+  width: 100%;
+  padding: 1% 0;
+  height: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+}
+.top_punter .current_allBet_wrap > div {
+  padding: 1.6px 2.4px;
+  padding: 0.1rem 0.15rem;
+  width: 100%;
+  height: 16.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.top_punter .current_allBet_wrap > div > div:last-child {
+  margin-left: 6%;
+}
+.top_punter .current_allBet_wrap > div > div:last-child {
+  padding-left: 1.6px;
+  padding-left: 0.1rem;
+}
+.top_punter .current_allBet_yellow {
+  color: #fadb00;
+  font-weight: 600;
+  text-shadow: 0 0 3px #fadb00;
+  white-space: nowrap;
+  padding-left: 4px;
+}
+.game_comp_baccarat_bet .bet_top_bar {
+  position: absolute;
+  top: -32px;
+  top: -2px;
+  left: 50%;
+  height: 100px;
+  z-index: 1;
+}
+.game_comp_baccarat_bet .bet_top_bar .bet_clock_progress {
+  position: absolute;
+  top: 3.2px;
+  top: 0.2rem;
+  left: 50%;
+  -webkit-transform: translate(-5.9rem, 0);
+  transform: translate(-5.9rem, 0);
+}
+.count_down_01 {
+  width: 32.64px;
+  width: 2.04rem;
+  height: 16.96px;
+  height: 1.06rem;
+  padding: 0.64px 1.44px;
+  padding: 0.04rem 0.09rem;
+}
+.count_down_01 > div.clock_view {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/Baccarat/count_down.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.24px 0;
+  padding: 0.14rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.14rem;
+  -webkit-box-shadow: 0 0 0.4rem #444343;
+  box-shadow: 0 0 0.4rem #444343;
+}
+.count_down_01 > div.clock_view p:first-child {
+  font-size: 2.24px;
+  font-size: 0.14rem;
+  color: #b69e91;
+  font-weight: 600;
+  margin: 0;
+}
+.count_down_01 > div.clock_view p:last-child {
+  font-size: 4.8px;
+  font-size: 0.3rem;
+  color: #f8db00;
+  text-shadow: 0 0 1.6px #f8db00;
+  text-shadow: 0 0 0.1rem #f8db00;
+  font-weight: 600;
+  margin: 0;
+}
+.baccarat_andio_comp {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+.game_comp_baccarat_bet .bet_top_bar .audio_ctrl {
+  position: absolute;
+  top: 90%;
+  left: 96px;
+  left: 6rem;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.audio_constrol {
+  cursor: pointer;
+}
+.audio_constrol i {
+  font-size: 6.4px;
+  font-size: 0.4rem;
+  color: #ccc;
+}
+.game_comp_baccarat_bet .bet_top_bar .bet_clock_progress .progress_item {
+  margin-top: 2px;
+}
+.betting_progress {
+  width: 32.64px;
+  width: 2.04rem;
+  border-radius: 0.1rem;
+  background: rgba(0, 0, 0, .2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 3px;
+  padding-bottom: 5px;
+}
+.betting_progress .betting_progress_wrap {
+  width: 92%;
+  margin: 0 auto;
+}
+.betting_progress .betting_progress_wrap p {
+  margin: 0;
+  font-size: 1.92px;
+  font-size: 0.12rem;
+}
+.betting_progress .betting_progress_wrap > p:first-child {
+  color: #367a9d;
+  white-space: nowrap;
+  font-size: 10px;
+}
+.bet_top_bar .progress_item .betting_progress .betting_progress_wrap > p:first-child {
+  font-size: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.el_progress {
+  position: relative;
+  line-height: 1;
+}
+.betting_progress .el_progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100% !important;
+  height: 100% !important;
+}
+.el_progress__text_inside .el_progress_bar {
+  padding-right: 0;
+  margin-right: 0;
+}
+.el_progress_bar {
+  padding-right: 50px;
+  width: 100%;
+  margin-right: -55px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.el_progress_bar, .el_progress_bar__inner::after, .el_progress_bar__innerText, .el_spinner {
+  display: inline-block;
+  vertical-align: middle;
+}
+.el_progress_bar__outer {
+  height: 6px;
+  border-radius: 100px;
+  /* background-color: #ebeef5; */
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+}
+.betting_progress .el_progress_bar__outer {
+  /* height: 14px !important; */
+  background-color: rgba(0, 0, 0, .3) !important;
+}
+.game_comp_baccarat_bet .bet_top_bar .bet_state {
+  position: absolute;
+  top: 3.2px;
+  top: 0.2rem;
+  left: 50%;
+  -webkit-transform: translate(3.88rem, 0);
+  transform: translate(3.88rem, 0);
+}
+.betting_state {
+  width: 25.6px;
+  width: 1.6rem;
+  height: 25.6px;
+  height: 1.6rem;
+  border-radius: 50%;
+  padding: 1.28px;
+  padding: 0.08rem;
+}
+.betting_state > div {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/Baccarat/baccarar_state.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0.4rem #444343;
+  box-shadow: 0 0 0.4rem #444343;
+  position: relative;
+}
+.betting_state > div .font_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.bet_top_bar .betting_state > div span {
+  text-shadow: 0 0 3px #000 !important;
+  color: #b55e44;
+  text-align: center;
+}
+.betting_state > div .font_box span {
+  display: block;
+  font-size: 2.24px;
+  font-size: 0.14rem;
+  font-weight: 600;
+  color: #d69566;
+  text-shadow: 0.32px 0.32px 1.28px black;
+  text-shadow: 0.02rem 0.02rem 0.08rem black;
+  white-space: nowrap;
+}
+.baccarat_bet .base_container {
+  width: 114.88px;
+  width: 7.18rem;
+  height: 49.6px;
+  height: 3.1rem;
+  border-top: none;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+/* 发牌区域 */
+.baccarat_bet .base_container .poker_box_player {
+  border-radius: 0 0 0 1.36rem;
+}
+.baccarat_bet .base_container .poker_box {
+  height: 49.6px;
+  height: 3.1rem;
+  width: 57.6px;
+  width: 3.6rem;
+  border-radius: 0 0 1.36rem 0;
+}
+.baccarat_bet .base_container .poker_box .poker_item {
+  width: 44px;
+  width: 2.75rem;
+  height: 28.8px;
+  height: 1.8rem;
+  position: absolute;
+  top: 5.6px;
+  top: 0.35rem;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-transform: translateX(10%);
+  transform: translateX(10%);
+}
+.baccarat_bet .base_container .poker_box .poker_item.player {
+  -webkit-transform: translateX(-110%);
+  transform: translateX(-110%);
+}
+.baccarat_bet .base_container .poker_box .poker_item .item {
+  border-radius: 0.05rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20px;
+  flex: 0 0 20px;
+  -ms-flex: 0 0 1.25rem;
+  flex: 0 0 1.25rem;
+  padding: 0.48px;
+  padding: 0.03rem;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.baccarat_bet .base_container .poker_box .poker_item .item:nth-of-type(3) {
+  width: 20.16px;
+  width: 1.26rem;
+  height: 28.8px;
+  height: 1.8rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+}
+.baccarat_bet .base_container .poker_box .poker_item div.score {
+  position: absolute;
+  top: 35.2px;
+  top: 2.2rem;
+}
+.baccarat_bet .base_container .poker_box .poker_item div.score.l {
+  right: 0px;
+  right: 0rem;
+}
+.baccarat_bet h4, .baccarat_bet p {
+  font-family: 'SimSun', 'Microsoft YaHei';
+  margin: 0;
+  color: #e6e6e6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.baccarat_bet .base_container .poker_box .poker_item div.score > h4 {
+  font-size: 5.12px;
+  font-size: 0.32rem;
+  text-shadow: 0.16px 0.16px 0.48px #111;
+  text-shadow: 0.01rem 0.01rem 0.03rem #111;
+}
+.baccarat_bet .base_container .poker_box .poker_item div.score h4, .baccarat_bet .base_container .poker_box .poker_item div.score p {
+  display: inline-block;
+}
+/* 第三张牌 */
+.thirdCard>div{
+  transform: rotate(90deg);
+  position: absolute;
+  left: -60px;
+  top:50px;
+}
+.thirdCard>img{}
+/* 下面的五个投注区域 */
+.baccarat_bet .bets_5 {
+  width: 62.4px;
+  width: 3.9rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.baccarat_bet .other_bet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.baccarat_bet .myBets{
+  z-index: 1;
+}
+
+.baccarat_bet .middle_bets, .baccarat_bet .aside_bets, .baccarat_bet .other_bet_item {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding-top: 6.4px;
+  padding-top: 0.4rem;
+}
+.baccarat_bet .bets_5 .middle_bets {
+  width: 100%;
+  height: 24px;
+  height: 1.5rem;
+  border-top-width: 0.16px;
+  border-top-width: 0.01rem;
+  border-bottom-width: 0.16px;
+  border-bottom-width: 0.01rem;
+  position: relative;
+}
+
+.baccarat_bet h4, .baccarat_bet p {
+  font-family: 'SimSun', 'Microsoft YaHei';
+  margin: 0;
+  color: #e6e6e6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.baccarat_bet .middle_bets > h4, .baccarat_bet .aside_bets > h4, .baccarat_bet .other_bet_item > h4 {
+  font-size: 5.76px;
+  font-size: 0.36rem;
+  margin: 0;
+}
+.baccarat_bet .middle_bets > p, .baccarat_bet .aside-bets > p, .baccarat_bet .other-bet-item > p {
+  font-size: 4.8px;
+  font-size: 0.3rem;
+  margin-top: -0.32px;
+  margin-top: -0.02rem;
+}
+.baccarat_bet .bets_5 .aside_bets > p {
+  font-size: 4.48px;
+  font-size: 0.28rem;
+  margin-top: -0.8px;
+  margin-top: -0.05rem;
+  text-align: center;
+  position: relative;
+}
+.baccarat_bet .middle_bets, .baccarat_bet .aside_bets, .baccarat_bet .other_bet_item {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding-top: 6.4px;
+  padding-top: 0.4rem;
+}
+
+.baccarat_bet .bets_5 .aside_bets {
+  width: 67.2px;
+  width: 4.2rem;
+  width: 400px;
+  height: 90.08px;
+  height: 5.63rem;
+  position: absolute;
+  top: -16.8px;
+  top: -1.05rem;
+  padding-top: 22.4px;
+  padding-top: 1.4rem;
+}
+.baccarat_bet .bets_5 .middle_bets.bankerPair {
+  height: 24.32px;
+  height: 1.52rem;
+  border-bottom: none;
+}
+.baccarat_bet .bets_5 .aside_bets.banker {
+  right: 0;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.baccarat_bet .bets_5 .aside_bets.player {
+  left: 0;
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+.select_bet {
+  width: 100%;
+  height: 32px;
+  height: 2rem;
+  margin: 0 auto;
+  /* position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); */
+  position: relative;
+  top: 0.2rem;
+  left: 0;
+}
+
+.baccarat_bet .select_bet_bar {
+  bottom: 7.2px;
+  bottom: 0.45rem;
+  width: 124px !important;
+  width: 7.75rem !important;
+  z-index: 2;
+}
+.select_bet .select_bet_wrap {
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 84%;
+  /* height: 100px; */
+}
+.__vuescroll{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.__vuescroll::-webkit-scrollbar {/*滚动条整体样式*/
+  /*高宽分别对应横竖滚动条的尺寸*/
+  width: 100%;
+  height: 10px;
+}
+.__vuescroll::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+.select_bet .select_bet_wrap .select_img{
+  height: 100px;
+  white-space: nowrap;
+  width: 100%;
+}
+.__vuescroll .__panel {
+  box-sizing: border-box;
+  position: relative;
+}
+.__vuescroll .__panel.__slide {
+  transform-origin: left top 0px;
+  user-select: none;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.select_bet .__vuescroll .__panel.__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.select_bet .select_bet_wrap .select_img{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.6px;
+  margin-bottom: 0.1rem;
+}
+.select_bet .select_bet_wrap .select_img > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.6px;
+  margin-bottom: 0.1rem;
+  position: relative;
+  width: 16px;
+  width: 1rem;
+  min-width: 36px;
+  min-height: 36px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 50%;
+  margin: 0 2.24px;
+  margin: 0 0.14rem;
+  cursor: pointer;
+  box-shadow: none;
+}
+.select_bet .select_bet_wrap .select_img > div {
+  position: relative;
+  width: 16px;
+  width: 1rem;
+  min-width: 36px;
+  min-height: 36px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 50%;
+  margin: 0 2.24px;
+  margin: 0 0.14rem -1%;
+  cursor: pointer;
+  transform: translateY(0px);
+  box-shadow: none;
+  min-width: 36px;
+  min-height: 36px;
+}
+.select_bet .select_bet_wrap .select_img > div img {
+  width: 100%;
+}
+.select_bet .select_bet_wrap .select_img > div span{
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 3.2px;
+  font-size: 0.2rem;
+  font-weight: 600;
+}
+.select_bet .select_bet_wrap .select_total {
+  max-width: 42.88px;
+  max-width: 2.68rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4px;
+  font-size: 0.25rem;
+  font-weight: 600;
+  color: #f7dd00;
+  max-width: 100%;
+  position: absolute;
+  bottom: 1.6px;
+  bottom: 0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 132%);
+  transform: translate(-50%, 132%);
+}
+.bet_result_table {
+  width: 100%;
+  height: 272px;
+  height: 292px;
+  min-height: 200px;
+  background-color: rgba(0, 0, 0, .3);
+  border: 1px solid rgba(245, 240, 240, .4);
+  z-index: 3;
+}
+.bet_result_table .title {
+  height: 15%;
+  border-bottom: 1px solid rgba(245, 240, 240, .4);
+  padding: 1.6px 1.28px;
+  padding: 0.1rem 0.08rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.bet_result_table .bet_result_wrap {
+  width: 100%;
+  height: 85%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.bet_result_table .bet_result_wrap .result_wrap {
+  width: 100%;
+  /* height: 230px; */
+  height: 242px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 7px 0;
+  padding-right: 7px;
+  overflow-x: scroll;
+}
+.bet_result_table .bet_result_wrap .result_wrap > div {
+  width: 32px;
+  height: 32px;
+  margin: 0.32px 0.64px;
+  margin: 0.02rem 0.04rem;
+  background: rgba(187, 185, 185, .3);
+  border-radius: 0.06rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.bet_result_table2 .title {
+  height: 40.5px;
+  border-bottom: 1px solid rgba(245, 240, 240, .4);
+  padding: 1.6px 1.28px;
+  padding: 0.1rem 0.08rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.table_on_pc .right_section .t2 {
+  width: 5.7rem;
+  height: 172px;
+  height: 206px;
+  max-width: 710px;
+  float: right;
+  position: absolute;
+  bottom: 3.52px;
+  bottom: 0.22rem;
+  right: 0;
+  /* top: 8rem;
+  right: 0; */
+}
+.bet_result_table2 {
+  width: 100%;
+  height: 100%;
+  height: 88%;
+  background-color: rgba(0, 0, 0, .3);
+  border: 1px solid rgba(245, 240, 240, .4);
+}
+.bet_result_table2 .title {
+  height: 40.5px;
+  border-bottom: 1px solid rgba(245, 240, 240, .4);
+  padding: 1.6px 1.28px;
+  padding: 0.1rem 0.08rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.table_on_pc .big_road_table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bet_result_table2 .title > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+.bet_result_table2 .title > div > div {
+  vertical-align: middle;
+  margin: 0 0.8px;
+  margin: 0 0.05rem;
+}
+.__vuescroll {
+  position: relative;
+}
+.bet_result_table2 .__vuescroll {
+  margin: 0 3px;
+  height: 100%;
+  width: 98%;
+  padding: 0px;
+  overflow-x: scroll;
+  /* height: 130px !important; */
+}
+.bet_result_table2 .__vuescroll .__panel.__slide {
+  min-height: 0;
+  height: 100%;
+  width: -webkit-fit-content;
+  transform: translate3d(-178.75px, 0px, 0px) scale(1);
+}
+.bet_result_table2 .big_road {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px;
+}
+.bet_result_table .bet_result_wrap .result_wrap::-webkit-scrollbar,
+.bet_result_table2 .__vuescroll::-webkit-scrollbar {/*滚动条整体样式*/
+  /*高宽分别对应横竖滚动条的尺寸*/
+  width: 100%;
+  height: 10px;
+}
+.bet_result_table .bet_result_wrap .result_wrap::-webkit-scrollbar-thumb,
+.bet_result_table2 .__vuescroll::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+.__vuescroll .__panel {
+  box-sizing: border-box;
+  position: relative;
+}
+.__vuescroll .__panel.__slide {
+  transform-origin: left top 0px;
+  user-select: none;
+  min-width: 100%;
+  min-height: 100%;
+}
+.select_bet .__vuescroll .__panel.__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.bet_result_table2 .big_road .column_item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 18px;
+  flex: 0 0 18px;
+  margin-right: 1px;
+}
+.bet_result_table2 .big_road .column_item .column_item_row {
+  width: 18px;
+  height: 18px;
+  background-color: rgba(187, 185, 185, .6);
+  position: relative;
+  margin-bottom: 1px;
+}
+.pop_up{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.pop_up>div {
+  max-width: 136px;
+  max-width: 8.5rem;
+  width: 100%;
+  height: 56px;
+  height: 3.5rem;
+  min-height: 230px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  -o-border-image: linear-gradient(to left, rgba(3, 123, 61, .2), rgba(245, 215, 2, .8), rgba(3, 123, 61, .2)) 30 0;
+  border-image: -webkit-gradient(linear, right top, left top, from(rgba(3, 123, 61, .2)), color-stop(rgba(245, 215, 2, .8)), to(rgba(3, 123, 61, .2))) 30 0;
+  border-image: linear-gradient(to left, rgba(3, 123, 61, .2), rgba(245, 215, 2, .8), rgba(3, 123, 61, .2)) 30 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, .4)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  top: 1.5rem;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 5;
+  text-align: center;
+  overflow: hidden;
+  -webkit-animation: pop-data-v-9ae925ce 1s linear;
+  animation: pop-data-v-9ae925ce 1s linear;
+  padding-top: 11.2px;
+  padding-top: 0.7rem;
+}
+.pop_up > div > img {
+  margin-top: 3.2px;
+  margin-top: 0.2rem;
+}
+.pop_up .title {
+  height: 6.72px;
+  height: 0.42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.pop_up .title .chara {
+  font-size: 4.8px;
+  font-size: 0.3rem;
+  font-weight: 900;
+  color: orange;
+}
+.baccart_others .select_bets .chara_btn {
+    min-height: 16px;
+    height: 1.92px;
+    height: 0.12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .1)), color-stop(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .1)));
+    background: linear-gradient(to left, rgba(0, 0, 0, .1), rgba(0, 0, 0, .6), rgba(0, 0, 0, .1));
+    padding: 0 5px;
+    z-index:20;
+}
+.baccart_others .select_bets .chara_btn .chara {
+  min-width: 100%;
+  text-align: center;
+}
+.baccart_others .select_bets .chara_btn .chara ._chara {
+  height: 100%;
+  min-height: 14px;
+  color: white;
+  font-size: 1.92px;
+  font-size: 0.12rem;
+}
+.baccart_others .select_bets .chara_btn .chara ._chara span {
+  white-space: nowrap;
+  text-shadow: 0 0 1.28px #f4d903;
+  text-shadow: 0 0 0.08rem #f4d903;
+}
+.btn01:hover{
+  box-shadow: rgb(255,235,83) 0 0 0.2rem !important;
+}
+.btn1:hover{
+  box-shadow: rgb(247,59,68) 0 0 0.2rem !important;
+}
+.btn5:hover{
+  box-shadow: rgb(47,190,243) 0 0 0.2rem !important;
+}
+.btn10:hover{
+  box-shadow: rgb(73,166,54) 0 0 0.2rem !important;
+}
+.btn50:hover{
+  box-shadow: rgb(126,132,125) 0 0 0.2rem !important;
+}
+.btn100:hover{
+  box-shadow: rgb(200,87,212) 0 0 0.2rem !important;
+}
+.btn500:hover{
+  box-shadow: rgb(6,6,6) 0 0 0.2rem !important;
+}
+.btn1000:hover{
+  box-shadow: rgb(160,118,27) 0 0 0.2rem !important;
+}
+.btn5000:hover{
+  box-shadow: rgb(239,72,42) 0 0 0.2rem !important;
+}
+/* 自己的投注 */
+.myBets{
+  display: none;
+}
+.myBets .chara_btn{
+  height: 0.3rem !important;
+}
+.myBets .pop_up_num{
+  white-space: nowrap;
+  text-align: center;
+  width: auto;
+  position: absolute;
+  top: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.myBets ._chara span{
+  font-size: 18px;
+}
+.myBets .pop_up_num>p img{
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #f4d903;
+  width: 35px;
+  height: 30px;
+  margin: 0 4px 4px 4px;
+}
+.myBets .pop_up_num>div{
+  padding: 2px 5px;
+  background: linear-gradient(to left, rgba(0, 0, 0, .1), rgba(0, 0, 0, .6), rgba(0, 0, 0, .1));
+}
+/* 庄 */
+/* 闲 */
+/* 闲对 */
+/* 庄对 */
+/* 和 */
+.pokerItems img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-shadow: -1px 1px 0.1rem #555;
+  box-shadow: -1px 1px 0.1rem #555;
+  border-radius: 0.18rem;
+  transformStyle: preserve-3d;
+  animationDuration: 0.3s;
+  transition: all 0.6s ease 0s;
+  /* animation: rotatedown 2s;
+  -webkit-animation: rotatedown 2s; */
+}
+.pokerItems>img{
+  top: -300px;
+  left: 0;
+}
+.pokerItems>div{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.18rem;
+  overflow: hidden;
+}
+.pokerItems>div>img{
+  z-index: 1;
+}
+.pokerItems audio{
+  position: absolute;
+  opacity: 0;
+}
+@keyframes rotatedown{
+  from{transform:rotateY(0deg);top: -300px;}
+  to{transform:rotateY(720deg);top: 0px;}
+}
+ /* style={{transformStyle: "preserve-3d", animationDuration: "0.3s", transition: "all 0.6s ease 0s", top: "0px", transform: "rotateY(0deg)"}} */
+.player>div:nth-of-type(3) .pokerItems img{
+  transform-style: preserve-3d;
+  animation-duration: 0.3s;
+  transition: all 0.6s ease 0s;
+  /* top: 0px; */
+  /* transform: rotateY(0deg); */
+  /* transition: 0.5s;
+  animation: rotates 0.5s linear infinite;
+  transform-origin: 57px 57px; */
+  /* animation: rotates 2s;
+  -webkit-animation: rotates 2s; */
+}
+@keyframes rotates{
+  /* from{transform:rotateY(0deg);top: -300px;}
+  to{transform:rotateY(720deg);top: 0px;} */
+  0%{transform:rotateY(0deg);top: -300px;}
+  99%{transform:rotateY(720deg);top: 50px;}
+  100%{
+    transform: rotate(90deg);
+    top: 50px;
+    left: -63px;
+  }
+  /* 0%{transform:rotateY(0deg);top: -300px;}
+  10%{transform:rotateY(36deg);top: -270px;}
+  20%{transform:rotateY(72deg);top: -240px;}
+  30%{transform:rotateY(30deg);top: -210px;}
+  40%{transform:rotateY(40deg);top: -180px;}
+  50%{transform:rotateY(50deg);top: -150px;}
+  60%{transform:rotateY(60deg);top: -120px;}
+  70%{transform:rotateY(75deg);top: -90px;}
+  80%{transform:rotateY(80deg);top: -60px;}
+  90%{transform:rotateY(85deg);top: -30px;}
+  100%{transform:rotateY(90deg);top: 0px;} */
+}
+.bet_result_table2 .big_road .column_item .column_item_row .is_banker_player {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #283283;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.bet_result_table2 .big_road .column_item .column_item_row .is_banker_player.banker_active {
+  border: 2px solid #ad1632;
+}
+.bet_result_table2 .big_road .column_item .column_item_row .is_banker_pair {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  background-color: #283283;
+}
+.bet_result_table2 .big_road .column_item .column_item_row .is_banker_pair.banker_active {
+  top: -1px;
+  left: -1px;
+  bottom: auto;
+  bottom: initial;
+  right: auto;
+  right: initial;
+  background-color: #ad1632;
+}
+.bet_result_table2 .big_road .column_item .column_item_row .is_banker_pair.banker_active {
+  border: 2px solid #ad1632;
+}
+.bet_result_table2 .big_road .column_item .column_item_row .is_tie {
+  color: #09f974;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 600;
+}
+/* 五个区域里面 尚可投注 */
+.baccarat_bet .max_bet_tips {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  bottom: 0rem;
+  z-index: 0;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  font-size: 12px;
+  color: #7cb597;
+  text-shadow: 0 0 4px #333;
+  max-height: 38px;
+}
+.baccarat_bet .aside_bets .max_bet_tips {
+  top: 40%;
+}
+.baccarat_bet .middle_bets:hover .max_bet_tips, .baccarat_bet .aside_bets:hover .max_bet_tips {
+  display: block;
+  padding: 3px 2px 1px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, .4);
+}
+.baccarat_bet .max_bet_tips em {
+  font-weight: 700;
+  color: #f5dd2b;
+  font-size: 12px;
+  padding-left: 0.64px;
+  padding-left: 0.04rem;
+  padding-right: 0.04rem;
+  opacity: 0.8;
+}
+.baccarat_bet .middle_bets .max_bet_tips, .baccarat_bet .aside_bets .max_bet_tips {
+  display: none;
+}
+/* 赢得效果 */
+.baccarat_bet .active_win > h4, .baccarat_bet .active_win_1 > h4, .baccarat_bet .active_win_2 > h4, .baccarat_bet .active_win > p, .baccarat_bet .active_win_1 > p, .baccarat_bet .active_win_2 > p {
+  color: #eee;
+  text-shadow: 0 0 2.4px #fff;
+  text-shadow: 0 0 0.15rem #fff;
+  position: relative;
+  z-index: 7;
+  -webkit-animation: fontShadow 0.9s linear infinite;
+  animation: fontShadow 0.9s linear infinite;
+}
+.warn{
+  color: red !important;
+  -webkit-animation: fontShadow 0.9s linear infinite;
+  animation: fontShadow 0.9s linear infinite;
+}
+.baccarat_bet  .active_win:hover .max_bet_tips, .baccarat_bet .active_win:hover .max_bet_tips,
+.baccarat_bet  .active_win .baccart_others {
+  display: none;
+}
+@keyframes fontShadow{
+  0%{
+    transform:scale(1)
+  }
+  50%{
+    transform:scale(1.1)
+  }
+  100%{
+    transform:scale(1)
+  }
+}
+.baccarat_bet .active_win > p:after, .baccarat_bet .active_win_1 > p:after, .baccarat_bet .active_win_2 > p:after {
+    content: "WIN";
+    font-size: 8px;
+    font-size: 0.5rem;
+    color: #fbe452;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 75%);
+    transform: translate(-50%, 75%);
+}
+.select_bet .select_bet_wrap .select_total {
+  max-width: 42.88px;
+  max-width: 2.68rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4px;
+  font-size: 0.25rem;
+  font-weight: 600;
+  color: #f7dd00;
+  max-width: 100%;
+  position: absolute;
+  bottom: 1.6px;
+  bottom: 0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 132%);
+  transform: translate(-50%, 132%);
+  -webkit-transform: translate(-50%, 160%);
+  transform: translate(-50%, 160%);
+}
+.select_bet .select_bet_wrap .select_total > .img {
+  display: inline-block;
+  width: 4.8px;
+  width: 0.3rem;
+  vertical-align: bottom;
+  margin-right: 1.12px;
+  margin-right: 0.07rem;
+}
+.select_bet .select_bet_wrap .select_total > .img {
+  display: inline-block;
+  width: 4.8px;
+  width: 0.3rem;
+  vertical-align: bottom;
+  margin-right: 1.12px;
+  margin-right: 0.07rem;
+}
+/* 移动端 */
+/* @media screen and (max-width: 1820px) {
+  .table_on_pc .left_section .record{
+    left: -280px;
+  }
+}
+@media screen and (max-width: 1760px) {
+  .table_on_pc .right_section .statis{
+    left: 290px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .left_section .t1{
+    left: -580px;
+  }
+  .table_on_pc .right_section .t2{
+    right: -5.8rem;
+  }
+} */
+.table_on_mobile{
+  display: none;
+}
+#changeTab{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 36px;
+  bottom: 0.2rem;
+}
+#changeTab>div>div{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+#changeTab>div>div label{
+  margin: 0 !important;
+}
+@media screen and (max-width: 776px) {
+  .game_dice_main{
+    margin-bottom: -108px;
+  }
+  /* tab切换按钮 */
+  #changeTab{
+    bottom: 18px;
+  }
+  #changeTab>div{
+    border: none !important;
+  }
+  #changeTab>div>div{
+    width: 180px;
+  }
+  .select_bet{
+    margin-bottom: 1rem;
+  }
+  /* 左右路单按钮隐藏 */
+  .table_on_pc{
+    display: none;
+  }
+  .bet_result_table .title > div > div:last-child{
+    margin-left: 2px;
+  }
+  .small_btn{
+    display: none;
+  }
+  .baccarat_bet {
+    width: 19.2rem;
+    height: 100%;
+    padding-bottom: 16px;
+  }
+  .game_comp_baccarat_bet{
+    /* width: 375px; */
+    width: 100%;
+    background: #204f7c;
+  }
+  /* 移动端路单按钮 */
+  .table_on_mobile{
+    display: block;
+    margin-top: 60px;
+  }
+  .table_on_mobile .bet_tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 2.88px 0;
+    padding: 0.18rem 0;
+    margin-bottom: -0.16px;
+    margin-bottom: -0.01rem;
+    background-color: #0c3b59;
+  }
+  .bet_tabs > li {
+    display: inline-block;
+    height: 40px;
+    padding: 0.32px 1.6px;
+    padding: 0.02rem 0.1rem;
+    margin-left: 2.4px;
+    margin-left: 0.15rem;
+    text-align: center;
+    font-size: 14px;
+  }
+  .record{
+    height: 390px;
+  }
+  .bet_result_table2 .title{
+    display: none;
+  }
+  .liactive {
+    color: #e2c103;
+    /* border-bottom: 1px solid #e2c103; */
+  }
+
+  .baccarat_bet .is_mobile_screen{
+    background-image: url("../../images/Baccarat/bg_mobile_new.jpg");
+    background-repeat: no-repeat;
+    background-position: -1px 0;
+    position: relative;
+  }
+  .top_punter .current_allBet_wrap > div{
+    height: 38px;
+  }
+  /* 顶部开奖中 倒计时 */
+  .game_comp_baccarat_bet .bet_top_bar.at_top {
+    width: 100%;
+    height: 23.2px;
+    height: 1.45rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: 0.32px solid #153b5d;
+    border-bottom: 0.02rem solid #153b5d;
+  }
+  .game_comp_baccarat_bet .bet_top_bar .bet_clock_progress{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .phone_progress{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1.28px;
+    padding: 0.08rem;
+  }
+  .game_comp_baccarat_bet .bet_top_bar.at_top .bet_clock_progress .progress_item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(105%, -47%);
+    transform: translate(105%, -47%);
+  }
+  .game_comp_baccarat_bet .bet_top_bar .bet_state {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-200%, -50%);
+    transform: translate(-200%, -50%);
+  }
+  .betting_state {
+    width: 21.44px;
+    width: 1.34rem;
+    height: 21.44px;
+    height: 1.34rem;
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .count_down_01 {
+    width: 1.84rem;
+    height: 0.86rem;
+    height: 1rem;
+    padding: 0.04rem 0.09rem;
+  }
+ .bet_top_bar .count_down_01 > div p:last-child {
+    position: relative;
+    top: -6px;
+    font-size: 16px;
+  }
+  .game_comp_baccarat_bet .bet_top_bar .bet_clock_progress .progress_item {
+    margin-top: 0px;
+  }
+  .game_comp_baccarat_bet .bet_top_bar .audio_ctrl{
+    position: absolute;
+    top: 50%;
+    left: 66%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  .baccarat_bet.is_mobile_screen .bets_5 {
+    width: 41.6px;
+    width: 2.5rem;
+    -webkit-transform: translate(-1px, 0);
+    transform: translate(-1px, 0);
+  }
+  .baccarat_bet.is_mobile_screen .bets_5 .aside_bets {
+    width: 28.3vw;
+    max-width: 390px;
+    padding-top: 22.4px;
+    padding-top: 1.4rem;
+    height: 74.08px;
+    height: 4.63rem;
+    top: 0;
+  }
+  /* 第三张牌 */
+  .thirdCard>div{
+    left: -36px;
+    top: 34px;
+  }
+  .baccarat_bet.is_mobile_screen .bets_5 .aside_bets .max_bet_tips{
+    top: 50%;
+  }
+  .baccarat_bet.is_mobile_screen .bets_5 .middle_bets .max_bet_tips {
+    top: 50%;
+    max-height: 38px;
+  }
+  /* 下面的筹码 */
+  .baccarat_bet .select_bet_bar{
+    width: 5.75rem !important;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateX(0%);
+  }
+  .select_bet .select_bet_wrap{
+    height: 100%;
+  }
+  .select_bet .select_bet_wrap .select_img > div {
+    position: relative;
+    width: 0.67rem;
+    min-width: 36px;
+    min-height: 36px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 50%;
+    margin: 0 2.24px;
+    margin: 0 0.14rem;
+    cursor: pointer;
+  }
+}

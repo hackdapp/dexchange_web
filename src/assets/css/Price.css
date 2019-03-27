@@ -1,0 +1,70 @@
+.price{
+  width: 100%;
+  padding: 20px;
+  display: flex !important;
+  justify-content: space-between;
+}
+.price>div{
+  display: inline-block;
+  width: 48%;
+  /* max-width: 310px !important; */
+}
+:global(.inputs .ant-input-group-wrapper){
+  margin-bottom: 20px !important;
+}
+:global(.inputs .ant-input-group-addon){
+  left: auto;
+  right: 30px !important;
+  top: 8px;
+  z-index: 1;
+  border: none !important;
+  position: absolute !important;
+  text-align: right;
+}
+:global(.inputs:nth-of-type(odd) .ant-input-group-addon){
+  right: 24px !important;
+}
+:global(.inputs .ant-input){
+  border-radius: 8px !important;
+  padding-right: 46px;
+}
+:global(.inputs .ant-input-group-addon),:global(.inputs .ant-input){
+  background: transparent !important;
+  color: #fff;
+}
+.price>div>p{
+  display: flex;
+  justify-content: space-between;
+}
+.price>div>p:nth-of-type(1){
+  margin-top: 36px;
+}
+.buyBtn,.soldBtn{
+  display: block;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background-color: #74ee9c;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.soldBtn{
+  background-color: #da3062;
+}
+@media screen and (max-width: 776px) {
+  .priceLeft,.priceRight{
+    display: none !important;
+  }
+  .price{
+    padding: 0 !important;
+  }
+  .price>div{
+    width: 100% !important;
+  }
+  .price>div>p:first-of-type{
+    margin-top: 0 !important;
+  }
+}

@@ -1,0 +1,49 @@
+#intro{
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 20px 0; */
+}
+#intro h4{
+  font-family: MicrosoftYaHei;
+  font-size: 20px;
+  font-weight: 400;
+  font-stretch: normal;
+  color: #12a1db !important;
+  margin: 0.1rem 0;
+  text-align: left;
+}
+#intro p{
+  font-family: MicrosoftYaHei;
+  font-size: 16px;
+  font-weight: 400;
+  color: #858e97 !important;
+  margin-bottom: 20px;
+}
+.backToGame{
+  height: 50px;
+}
+.backToGame>a{
+  color: #fff;
+  display: block;
+  float: right;
+  width: 140px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background: url("../../images/pc/lottoBtn.png") no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 776px) {
+  #intro{
+    padding: 0px;
+    margin-top: -40px;
+  }
+  #intro h4{
+    font-size: 16px;
+  }
+  #intro>p{
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,110 @@
+#funnydots{
+  width: 100%;
+  height: 100%;
+  background: url("../../images/funnydots/pcBg.png") no-repeat 0 0;
+  background-size: cover;
+}
+.funnydots{
+  width: 1200px;
+  margin: 0 auto;
+}
+.changeTab{}
+
+.rightRecordTab{
+  /* display: none; */
+}
+.rightRecordTab{
+  display: block;
+  /* padding: 10px; */
+  position: fixed;
+  right: 90px;
+  top: 346px;
+  border-radius: 8px;
+  background:rgba(0,0,0,.4);
+  z-index: 100;
+  overflow: hidden;
+  /* display: none; */
+}
+.rightRecordTab>div,.rightRecordTab>div>div{
+  width:70px;
+  line-height: 70px;
+  height: 70px;
+  text-align: center;
+  background-size: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.fourDoor>div{
+  background: url('../../images/funnydots/door4.png') no-repeat center;
+  padding-bottom: 1px;
+}
+.fourDoor>div::after{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+  z-index: 101;
+}
+.fiveDoor>div{
+  background: url('../../images/funnydots/door5.png') no-repeat center;
+}
+@media screen and (max-width: 776px) {
+  .rightRecordTab{
+    right: 0;
+    top: 80px;
+    padding: 0;
+    background: none;
+    z-index: 111;
+    /* display: none; */
+  }
+  .rightRecordTab>div>div{
+    display: none;
+  }
+  .fourDoor::after{
+    content: "四门场";
+    display: block;
+    width: 30px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .fiveDoor::after{
+    content: "五门场";
+    display: block;
+    width: 30px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .rightRecordTab>div{
+    width:30px;
+    line-height: 30px;
+    height:120px;
+    text-align: center;
+    background:rgba(0,0,0,.4);
+    border-radius:8px 0px 0px 8px;
+    font-size: 16px;
+    -webkit-writing-mode: tb;
+    writing-mode: tb;
+    letter-spacing: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .changeTab{
+    margin-top: 0px;
+  }
+  #funnydots{
+    padding-top: 60px;
+    background:#0c6b26;
+  }
+  .funnydots{
+    width: 100%;
+  }
+
+}

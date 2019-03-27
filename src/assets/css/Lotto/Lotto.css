@@ -1,0 +1,83 @@
+/* :global(){} */
+#Lotto{
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-top: 0px;
+  position: relative;
+}
+#lottoTab{
+  margin-left: 0px !important;
+  position: relative;
+}
+#lottoTab>div{
+  margin-left: 10px !important;
+}
+#lottoTab>span{
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  text-align: center;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid rgba(255,84,0,1);
+}
+#lottoTab>span:hover{
+  background-color: rgba(255,84,0,1);
+}
+.lotop{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.lotop>div{
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+.lotop>div,.lotBet,.myLotBet{
+  border-radius:8px;
+  background:rgba(38,38,38,0.3);
+}
+.record{
+  width: 480px;
+}
+.record>p{
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  margin-bottom: 0;
+}
+@media screen and (max-width: 776px) {
+  #lottoTab>div{
+    margin-top: 52px;
+    margin-left: 0 !important;
+  }
+  .lotop>div{
+    margin:0px auto 20px;
+    width: 96%;
+  }
+  .record{
+    display: none !important;
+  }
+  #Lotto>a{
+    right: 10px !important;
+  }
+  #lottoTab>span{
+    font-size: 14px;
+    padding: 0 10px;
+    top: 24px;
+  }
+}

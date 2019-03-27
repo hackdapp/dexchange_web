@@ -1,0 +1,131 @@
+:global(.pricem .ant-input-number){
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+:global(.pricem .ant-input-group-addon),:global(.pricem .ant-input){
+  background: transparent !important;
+  color: #fff;
+}
+:global(.pricem){
+  padding: 10px;
+  display: none;
+}
+:global(.pricem p){
+  margin-bottom: 0 !important;
+}
+.pTabs,.per,.credit>p{
+  display: flex;
+  justify-content: space-between;
+}
+.pTabs>span,.per>span{
+  display: inline-block;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.pTabs>span{
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+}
+.pTabs>span:nth-of-type(1){
+  border-radius: 4px 0 0 4px;
+}
+.pTabs>span:nth-of-type(2){
+  border-radius: 0 4px 4px 0;
+}
+.per>span{
+  width: 20%;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+  color: #ff5400;
+  background-color: #2b2e49;
+  margin: 10px 0;
+}
+.pTabs>span:nth-of-type(1):hover,.buyTab{
+  color: #74ee9c;
+  border-color: #74ee9c !important;
+}
+.pTabs>span:nth-of-type(2):hover,.sellTab{
+  color: #da3062;
+  border-color: #da3062 !important;
+}
+.pIpt>div{
+  border-radius: 5px;
+  /* border: solid 1px #ffffff; */
+  white-space: nowrap;
+  position: relative;
+}
+.pIpt>p,
+.pIpt>p>span{
+  height: 40px !important;
+  line-height: 40px !important;
+}
+:global(.ant-input-number){
+  height: 38px !important;
+  line-height: 40px !important;
+  border-radius: 0px !important;
+  width: 75% !important;
+}
+:global(.ant-input-number),
+:global(.ant-input-number:focus){
+  outline: none !important;
+  box-shadow: none !important;
+}
+:global(.ant-input-number),.pIpt>p>span{
+  display: inline-block;
+}
+.pIpt>p>span{
+  position: absolute;
+  right: 5px;
+}
+:global(.ant-input-number-handler-wrap){
+  border-radius: 0;
+  background: rgba(38, 38, 38, 0.4);
+  border:none;
+  display: none;
+}
+:global(.ant-input-number-handler i){
+  color: #fff !important;
+}
+:global(.ant-input-number-handler-wrap>span),
+:global(.ant-input-number-handler-up:hover),
+:global(.ant-input-number-handler-down:hover),
+:global(.ant-input-number-handler-wrap:hover .ant-input-number-handler)
+{
+  width: 22px !important;
+  height: 50% !important;
+  background: rgba(38, 38, 38, 0.4) !important;
+}
+.deal>p{
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.deal .in{
+  background-color: #74ee9c;
+}
+.deal .out{
+  background-color: #da3062;
+}
+:global(.pricem){
+  display: none !important;
+}
+@media screen and (max-width: 776px) {
+  .price{
+    display: block !important;
+    padding: 0 !important;
+  }
+  :global(.pricem){
+    display: block !important;
+  }
+  .credit{
+    font-size: 12px;
+  }
+}

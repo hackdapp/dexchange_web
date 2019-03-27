@@ -1,0 +1,101 @@
+/* :global(){} */
+:global(#LotBet .ant-table-thead > tr > th){
+  background:rgba(255,255,255,.1);
+  border: none !important;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+:global(#LotBet){
+  background:rgba(38,38,38,.3);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+:global(#LotBet .win),:global(#LotBet .failure),:global(#LotBet .ant-table-tbody > tr > td){
+  background: transparent !important;
+  border: none !important;
+}
+:global(#LotBet .win){
+  color:#FF5400;
+}
+:global(#LotBet .failure){
+  color:#FFF;
+}
+:global(#LotBet .ant-tabs-bar){
+  border: none;
+}
+:global(#allLot),:global(myLot){
+  border: none !important;
+}
+:global(#LotBet .ant-table-thead > tr:first-child > th:last-child),:global(#LotBet .ant-table-thead > tr:first-child > th:first-child){
+  border-radius: 0 !important;
+}
+:global(#LotBet td),:global(#LotBet th){
+  text-align: center;
+}
+:global(#LotBet .ant-tabs-bar){
+  margin-bottom: 2px;
+}
+:global(#LotBet tr>td){
+  width: 20%;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center !important;
+}
+:global(#LotBet tr>td:last-child){
+  /* width: 40%; */
+}
+/* :global(#LotBet .ant-tabs-tab:nth-of-type(1)),:global(#allLotRecord){
+  display: none;
+} */
+:global(#myLot),:global(#allLot){
+  height: 275px;
+  overflow-y: scroll;
+}
+:global(#allLot::-webkit-scrollbar),:global(#myLot::-webkit-scrollbar) {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+  position: relative;
+}
+:global(#allLot::-webkit-scrollbar-thumb),:global(#myLot::-webkit-scrollbar-thumb) {/*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: #3c4771;
+  background: rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 776px) {
+  /* :global(#allLotRecord){
+    display: block;
+  } */
+  :global(#LotBet .ant-tabs-tab:nth-of-type(1)){
+    display: inline-block;
+  }
+  :global(#LotBet){
+    padding: 0;
+    margin: 40px 10px 20px;
+  }
+  :global(#LotBet .ant-tabs-nav-scroll){
+    text-align: center;
+  }
+  :global(#LotBet .ant-tabs-content){
+    margin-top: -1px;
+  }
+  :global(#LotBet tr>td){
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* :global(#LotBet .ant-tabs-nav .ant-tabs-tab){
+    margin-right: 42px;
+  } */
+  /* :global(#LotBet .ant-tabs-nav>div:nth-of-type(1)){
+    width: 355px;
+    display: flex;
+    justify-content: space-between;
+  }
+  :global(#LotBet .ant-tabs-nav .ant-tabs-tab){
+    margin: 0 !important;
+  } */
+}
