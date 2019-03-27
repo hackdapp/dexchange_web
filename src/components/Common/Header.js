@@ -350,9 +350,11 @@ class headers extends PureComponent {
       <Layout>
         <Header className="header">
           <Link to='/'>
-            <img src={require('../../assets/images/pc/logo.png')} alt="betclub" className="logo" />
+            
+            {/* <img src={require('../../assets/images/pc/logo.png')} alt="betclub" className="logo" /> */}
           </Link>
-          <Menu
+          
+          {/* <Menu
             theme="dark"
             mode="horizontal"
             defaultSelectedKeys={['tab1']}
@@ -363,9 +365,9 @@ class headers extends PureComponent {
             <Menu.Item key="tab4">
               <Link to='/vip' style={{ color: '#fff' }}><FormattedMessage id="HEADER_MENU_TAB4" /></Link>
             </Menu.Item>
-          </Menu>
+          </Menu> */}
           <span id={styles.callusPC} className={styles.callus}>
-            <Popover content={<a href="mailto:betclub@betclub.one">betclub@betclub.one</a>} title="官方邮箱">
+            {/* <Popover content={<a href="mailto:betclub@betclub.one">betclub@betclub.one</a>} title="官方邮箱">
               <i className="icon ion-ios-email"></i>
             </Popover>
             <Popover content={<div><img src={require('../../assets/images/pc/wx.jpg')} alt='betclub' style={{ width: "150px" }} /></div>} title="官方微信：betclub01" style={{ top: "20px" }}>
@@ -387,7 +389,7 @@ class headers extends PureComponent {
               </div>
             </div>} title="官方电报群" style={{ top: "20px" }}>
               <i className="fa fa-send"></i>
-            </Popover>
+            </Popover> */}
           </span>
           <div className="cpunet cpunetPC" style={{ display: account ? 'block' : 'none' }} onClick={this.cpuurl}>
             <Progress type="circle" percent={cpuPercent} format={percent => `${percent}% CPU`} width={40} />

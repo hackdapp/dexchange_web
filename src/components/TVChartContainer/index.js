@@ -20,7 +20,7 @@ export class TVChartContainer extends React.PureComponent {
 	}
 
 	static defaultProps = {
-		symbol: 'Coinbase:CLUB/EOS',
+		symbol: 'Coinbase:JXB/EOS',
 		interval: '15',
 		containerId: 'tv_chart_container',
 		libraryPath: '/charting_library/',

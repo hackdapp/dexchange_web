@@ -15,7 +15,7 @@ class footer extends PureComponent {
       <Layout>
         <Footer>
           <div className={styles.bx}>
-            <img src={require('../../assets/images/pc/logo.png')} alt="betclub" />
+            {/* <img src={require('../../assets/images/pc/logo.png')} alt="betclub" />
             <span className={styles.callus}>
               <Popover trigger="click" placement="top" content={<div><img src={require('../../assets/images/pc/wx.jpg')} alt='betclub'  style={{width:"150px"}}/></div>} title="官方微信：betclub01">
                 <Icon type="wechat" />
@@ -42,7 +42,7 @@ class footer extends PureComponent {
               <Popover placement="top" content={<a href="mailto:betclub@betclub.one">betclub@betclub.one</a>} title="email">
                 <em className={styles.business}>{formatMessage({id: 'FOOTER_COOPERATION'})}</em>
               </Popover>
-            </span>
+            </span> */}
           </div>
           <div id="bx" className={styles.bx + " " + styles.boxtips}>
             <div>
@@ -54,7 +54,7 @@ class footer extends PureComponent {
             <div>
               The games provided by BetClub are based on blockchain, fair and transparent. When you start playing these games, please note that online gambling and lottery is an entertainment vehicle and that it carries with it a certain degree of financial risk. Players should be aware of this risk, and govern themselves accordingly.
             </div>
-            <div style={{float:"right"}}>2019.08.08</div>
+            <div style={{float:"right"}}></div>
           </div>
         </Footer>
       </Layout>

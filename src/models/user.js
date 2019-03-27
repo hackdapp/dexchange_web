@@ -42,32 +42,32 @@ export default {
       // yield put({ type: "saveuser", payload: { account, address } })
     },
     *fetch({ payload: { timevalue } }, { call, put, select }) {  // eslint-disable-line
-      try {
-        const exam = yield select(state => state.user);
-        // 可质押部分 我的余额
-        const balanceRes = yield call(headerService.balance, exam.account);
-        const balanceResult = balanceRes.data;
-        if (exam.account && balanceRes && balanceResult.code === 0) {
-          yield put({ type: 'save1', payload: { balance: balanceResult.data } });
-        }
-        // 分红池 我的质押数量
-        const mystakeRes = yield call(headerService.queryMystake, exam.account);
-        const mystakeResult = mystakeRes.data;
-        if (exam.account && mystakeRes && mystakeResult.code === 0) {
-          yield put({ type: 'save2', payload: { list: mystakeResult.data ? mystakeResult.data : 0 } });
-        }
-        // 分红记录
-        const recordsRes = yield call(headerService.records, timevalue);
-        const recordsResult = recordsRes.data;
-        if (recordsRes && (recordsResult.code === 0) && (recordsResult.data.length > 0)) {
-          yield put({ type: 'save3', payload: { records: recordsResult.data.length > 0 ? recordsResult.data.reverse() : [] } });
-        }
+    //   try {
+    //     const exam = yield select(state => state.user);
+    //     // 可质押部分 我的余额
+    //     const balanceRes = yield call(headerService.balance, exam.account);
+    //     const balanceResult = balanceRes.data;
+    //     if (exam.account && balanceRes && balanceResult.code === 0) {
+    //       yield put({ type: 'save1', payload: { balance: balanceResult.data } });
+    //     }
+    //     // 分红池 我的质押数量
+    //     const mystakeRes = yield call(headerService.queryMystake, exam.account);
+    //     const mystakeResult = mystakeRes.data;
+    //     if (exam.account && mystakeRes && mystakeResult.code === 0) {
+    //       yield put({ type: 'save2', payload: { list: mystakeResult.data ? mystakeResult.data : 0 } });
+    //     }
+    //     // 分红记录
+    //     const recordsRes = yield call(headerService.records, timevalue);
+    //     const recordsResult = recordsRes.data;
+    //     if (recordsRes && (recordsResult.code === 0) && (recordsResult.data.length > 0)) {
+    //       yield put({ type: 'save3', payload: { records: recordsResult.data.length > 0 ? recordsResult.data.reverse() : [] } });
+    //     }
 
-        // 我的余额
-        yield put({ type: 'fetchBonusBalance', payload: {} });
-      } catch (error) {
-        message.error(error.message, 5);
-      }
+    //     // 我的余额
+    //     yield put({ type: 'fetchBonusBalance', payload: {} });
+    //   } catch (error) {
+    //     message.error(error.message, 5);
+    //   }
     },
 
     *fetchBonusBalance({ payload }, { call, put, select }) {
@@ -75,34 +75,36 @@ export default {
       const exam = yield select(state => state.user);
       const bonusRes = yield call(headerService.bonus, exam.account);
       const bonusResult = bonusRes.data;
-      if (exam.account && bonusRes && bonusResult.code === 0) {
-        if (bonusResult.data.EOS && bonusResult.data.CLUB) {
-          yield put({ type: 'save4', payload: { bonus: bonusResult.data } });
-        } else {
-          yield put({ type: 'save4', payload: { bonus: { "EOS": '0.0000000000', "CLUB": '0.0000000000' } } });
-        }
-      }
+    //   if (exam.account && bonusRes && bonusResult.code === 0) {
+    //     if (bonusResult.data.EOS && bonusResult.data.CLUB) {
+    //       yield put({ type: 'save4', payload: { bonus: bonusResult.data } });
+    //     } else {
+    //       yield put({ type: 'save4', payload: { bonus: { "EOS": '0.0000000000', "CLUB": '0.0000000000' } } });
+    //     }
+    //   }
+
+    
     },
     *saveAccount({ payload: { account, address } }, { call, put }) {
       yield put({ type: "saveuser", payload: { account, address } })
     },
 
     *fetchAccountCPU({ payload }, { call, put }) {
-      try {
+    //   try {
 
-        const account = payload.account
-        if (account == "") {
-          return false;
-        }
-        const res = yield call(headerService.fetchCPU, account);
-        const cpuResult = res.data;
-        if (cpuResult.code === 0) {
-          yield put({ type: 'saveAccountCpu', payload: { cpuInfo: cpuResult.data } });
-        }
-        return cpuResult.data
-      } catch (error) {
-        message.error(error.message);
-      }
+    //     const account = payload.account
+    //     if (account == "") {
+    //       return false;
+    //     }
+    //     const res = yield call(headerService.fetchCPU, account);
+    //     const cpuResult = res.data;
+    //     if (cpuResult.code === 0) {
+    //       yield put({ type: 'saveAccountCpu', payload: { cpuInfo: cpuResult.data } });
+    //     }
+    //     return cpuResult.data
+    //   } catch (error) {
+    //     message.error(error.message);
+    //   }
 
     },
 
@@ -123,6 +125,7 @@ export default {
       } catch (error) {
         message.error(error.message);
       }
+
     },
 
     *saveBalance({ payload: { balance, list } }, { call, put }) {

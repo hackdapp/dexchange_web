@@ -6,7 +6,7 @@ export async function pledgeToken(datas) {
     let nums = datas.nums
     const account = datas.account
     nums = parseFloat(nums).toFixed(4);
-    var value = nums + ' CLUB';
+    var value = nums + ' JXB';
     const params = {
         actions: [
             {
@@ -32,7 +32,7 @@ export async function redeemToken(datas) {
     let nums = datas.nums
     const account = datas.account
     nums = parseFloat(nums).toFixed(4);
-    var value = nums + ' CLUB';
+    var value = nums + ' JXB';
     const params = {
         actions: [
             {

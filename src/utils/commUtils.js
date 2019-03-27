@@ -1,5 +1,34 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+
+
+const setting = {
+    'http_api': 'http://118.190.112.181:3000',
+    'poolUrl': 'http://118.190.112.181:3003',
+    'contract_eos': 'eosio.token',
+    'contract_dice': 'clubtoken111',
+    'contract_dexchange': 'hackdappexch',
+    'chain_info': {
+      blockchain: 'eos',
+      protocol: 'http',
+      host: '118.190.112.181',
+      port: 7777,
+      chainId: 'cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f'
+    }
+}
+
+//1. 配置服务器IP地址
+export const exchangeHost = '118.190.112.181';
+//2. 配置交易所后端端口
+export const poolUrl = setting.poolUrl;
+export const exchangeBaseUrl = setting.http_api;
+export const actionAccountEOS = setting.contract_eos;
+export const actionAccountDICE = setting.contract_dice;
+export const exchangeContract = setting.contract_dexchange;
+export const chaininfo = setting.chain_info;
+
+export const transactionUrl = 'https://bloks.io';
+
 // 是否是空数组
 export const strSplitSpace = (str) => {
   const result = str.trim().split(/\s+/)
@@ -10,48 +39,6 @@ export const nowTab = (str) => {
   const result = window.location.pathname.match('[^/]+(?!.*/)') ? window.location.pathname.match('[^/]+(?!.*/)')[0] : "";
   return result;
 }
-/**
- * 2019/1/6
- */
-// export const baseUrl ='http://192.168.0.158:3003';//jiaoxuebu
-// export const testAccount ='lixu';
-// export const testAccount ='lixu12341234';
-
-// export const baseUrl = 'http://118.190.112.181:3003'; //测试
-export const diceUrl = 'http://183.111.122.242:3002';
-export const poolUrl = 'http://183.111.122.242:3003';
-export const castUrl = 'http://183.111.122.242:3004'
-export const baseRedUrl = 'http://183.111.122.242:3005';
-export const exchangeBaseUrl = 'http://183.111.122.242:3000';
-export const baccaratUrl = 'http://183.111.122.242:4000/EOS'
-export const baccaratClubUrl = 'http://183.111.122.242:4000/CLUB'
-export const funnydotsUrl = 'http://183.111.122.242:5000'
-
-
-export const transactionUrl = 'https://bloks.io';
-// export const testAccount ='clubtest5';
-// export const testAccount ='lixu12341234';
-// export const testAccount = 'clubtest5';
-// export const testAccount ='lixu';
-
-export const actionAccountEOS = 'eosio.token';//EOS合约账号
-export const actionAccountDICE = 'clubtoken';//club代币合约账号
-
-//dice合约账号
-export const toUser = 'clubadmin';
-//乐透合约账号
-export const actionAccountLotto = 'clubcast';
-//红包合约账户
-export const redContractAccount = "clubred";
-//交易所合约
-export const exchangeContract = 'hackdappexch'
-// 我的余额：提现时调用的是本地合约账号，为clubpool
-export const balanceAccount = "clubpool";
-//百家乐合约
-export const baccaratAccount = "hackdappbacc";
-//拖筒子合约
-export const funnydotsAccount = "hackdapptube";
-
 
 // 邀请好友部分地址获取
 export const nowUrl = (str) => {

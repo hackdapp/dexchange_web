@@ -6,7 +6,7 @@ import request from '../utils/request';
 
 const eosConfig = {
     chainId: 'cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f',
-    httpEndpoint: 'http://183.111.122.242:7777',
+    httpEndpoint: 'http://118.190.112.181:7777',
     keyProvider: '',
     authorization: 'desertchain@auth.trade',
     verbose: false

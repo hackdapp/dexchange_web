@@ -42,7 +42,7 @@ class OrderNow extends PureComponent {
           return parseFloat(text / defaultTrade.pricePrecision).toFixed(4)
         }
       }, {
-        title: formatMessage({id: 'EXCHANGE_QUANTITY'})+' (CLUB)',
+        title: formatMessage({id: 'EXCHANGE_QUANTITY'})+' (JXB)',
         dataIndex: 'total_quantity',
         render(text) {
           return <span>{parseFloat(strSplitSpace(text)[0]).toFixed(4)}</span>
@@ -77,7 +77,7 @@ class OrderNow extends PureComponent {
               return <div className={styles.orderItem} key={i}>
                 <div className={styles.orderItemTop}>
                   <span className={item.type === 101 ? styles.buy : styles.sell}>{item.type === 101 ? "buy" : "sell"}</span>
-                  <span>CLUB / EOS</span>
+                  <span>JXB / EOS</span>
                   <span>{moment(item.place_time + 'Z').utcOffset(8).format("YYYY-MM-DD HH:mm:ss")}</span>
                 </div>
                 <div className={styles.orderItemBot}>
@@ -86,7 +86,7 @@ class OrderNow extends PureComponent {
                     <div>{item.price && defaultTrade.pricePrecision ? parseFloat(item.price / defaultTrade.pricePrecision).toFixed(4): ''}</div>
                   </div>
                   <div>
-                    <div>{formatMessage({id: 'EXCHANGE_AMOUNT'})}(CLUB)</div>
+                    <div>{formatMessage({id: 'EXCHANGE_AMOUNT'})}(JXB)</div>
                     <div>{parseFloat(strSplitSpace(item.total_quantity)[0]).toFixed(4)}</div>
                   </div>
                   <div>

@@ -10,7 +10,7 @@ export default {
 	getBars: function (symbolInfo, resolution, from, to, first, limit) {
 		const duration = resolution === 'D' ? 86400 : resolution === '60' ? 3600 : 60
 		const body = {
-			"pairname": "CLUB/EOS",
+			"pairname": "JXB/EOS",
 			"pairid": 1,
 			"begintime": moment(from * 1000).format("YYYY-MM-DD HH:mm"),
 			"endtime": moment(to * 1000).format("YYYY-MM-DD HH:mm"),
